@@ -61,7 +61,7 @@ class ProjectController extends Controller
     {
         try {
 
-            $project = Project::where('slug', $slug)->with('type', 'technologies')->firsOrFail();
+            $project = Project::where('slug', $slug)->with('type', 'technologies')->firstOrFail();
 
             return response()->json([
                 'success' => true,

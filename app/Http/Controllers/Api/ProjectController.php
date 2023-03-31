@@ -72,7 +72,7 @@ class ProjectController extends Controller
         } catch (Exception $e) {
 
             return response()->json([
-                'success' => true,
+                'success' => false,
                 'message' => $e->getMessage()
             ]);
 
